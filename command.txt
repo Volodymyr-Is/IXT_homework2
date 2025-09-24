@@ -1,0 +1,8 @@
+aws ec2 run-instances \
+  --image-id ami-0360c520857e3138f \
+  --count 1 \
+  --instance-type t3.micro \
+  --key-name _ \
+  --security-group-ids _ \
+  --user-data file://~/_/user-data.sh \
+  --iam-instance-profile Name="_"
